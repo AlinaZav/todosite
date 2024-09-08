@@ -1,6 +1,8 @@
 const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('todo-input');
 const todoList = document. getElementById('todo-list');
+const TodoTu = document. getElementById('tuturu');
+const TodoIt = document. getElementById('jdi');
 
 todoForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -9,6 +11,8 @@ todoForm.addEventListener('submit', function(event) {
     if (newTask === '' ){
         alert('Пожалуйста впишите задачу');
         return;
+    }else{
+        TodoIt.play();
     }
 
     todoInput.value = '';
@@ -29,7 +33,7 @@ function addTask(task){
     listItem.appendChild(chekBox);
 
     const deleteButton = document.createElement('button');
-  deleteButton.textContent ='Delete';
+  deleteButton.textContent ='Удалить';
 
   listItem.appendChild(deleteButton);
 
@@ -38,7 +42,9 @@ function addTask(task){
 
   chekBox.addEventListener('change', function(){
     if(this.checked){
+        TodoTu.play();
         taskText.style.textDecoration = 'line-through';
+        
     } else {
         taskText.style.textDecoration = 'none';
     }
