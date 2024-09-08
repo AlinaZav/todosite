@@ -39,6 +39,7 @@ function addTask(task){
 
   todoList.appendChild(listItem);
 
+ 
 
   chekBox.addEventListener('change', function(){
     if(this.checked){
@@ -54,7 +55,6 @@ function addTask(task){
 deleteButton.addEventListener('click', function(){
 todoList.removeChild(listItem);
 });
-
 
 
 }

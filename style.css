@@ -1,22 +1,18 @@
 
-body{
+#todo-app{
+  font-family: Arial, Helvetica, sans-serif;
+    border: #e29fe1 dotted;
+    width: fit-content;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    width: 600px;
-    height: fit-content;
-    border: #e29fe1 solid;
 }
 .TitleToDo{
     color: #f38fb0;
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 50px;
 }
 
 .sumToDo{
    margin-top:20px ;
-    width: 100px;
-    height: 50px;
     color: #f38fb0;
     background-color: rgb(254, 181, 202);
     border: none;
@@ -25,13 +21,6 @@ body{
     
 }
 
-.inpToDo{
-    width: 700px;
-    height: 50px;
-    
-
-
-}
 
 input[type=text] {
     appearance: none;
@@ -42,6 +31,7 @@ input[type=text] {
     border-radius: .2em .2em 0 0;
     padding: .4em;
     color: #f38fb0;
+    width: 400px;
 }
 input[type=checkbox] {
     appearance: none;
@@ -109,4 +99,7 @@ span{color: #f6a7c2;}
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
+
+
